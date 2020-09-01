@@ -1,29 +1,27 @@
-//inicio de programa
-int     ledArray[] = {2,3,4};     //Se declaran los LED
-int     ledIndicador = 5;
-boolean calibrado  = false;        //booleano para checar si ya esta calibrado
-int     espera     = 5000;      //Tiempo de espera de calibración
-boolean inicio     = false;
+#include <Arduino.h>
 
+int ledArray[] = { 2, 3, 4 };
+int ledIndicador = 5;
+bool calibrado = false;
+int espera = 5000;
+bool inicio = false;
 
-//Lecturas
-int red   = 0;    //inicia lectura roja
-int green = 0;    //inicia lectura verde
-int blue  = 0;    //inicia lectura azul
+int red = 0;
+int green = 0;
+int blue = 0;
 
-//Genera las matrices de lectura
-float colorMatriz[]  = {0,0,0};
-float blancoMatriz[] = {1,1,1};
-float negroMatriz[]  = {0,0,0};
-float grisMatriz[]   = {0,0,0};
+float colorMatriz[]  = { 0, 0, 0 };
+float blancoMatriz[] = { 1, 1, 1 };
+float negroMatriz[]  = { 0, 0, 0 };
+float grisMatriz[]   = { 0, 0, 0 };
 
-void setup(){
- pinMode(2,OUTPUT);
- pinMode(3,OUTPUT);
- pinMode(4,OUTPUT);   //Inicia las 4 salidas
- pinMode(5,OUTPUT);
-
- Serial.begin(250000);  //Inicia el serial en el canal 9600
+void setup() {
+  pinMode(2,OUTPUT);
+  pinMode(3,OUTPUT);
+  pinMode(4,OUTPUT);   //Inicia las 4 salidas
+  pinMode(5,OUTPUT);
+  
+  Serial.begin(9600);  //Inicia el serial en el canal 9600
 }
 
 void calibracion(){                   //Función de calibrado
@@ -65,13 +63,11 @@ void calibracion(){                   //Función de calibrado
   delay(espera);                      //3 segundos antes de empezar
 }
 
-
 void revisaCalibre(){     //Revisa si el programa esta calibrado, si no lo está inicia el calibrado
   if(calibrado == false){
     calibracion();
   }
 }
-
 
 void revisarColor(){                                    //Función de escaneo
   
@@ -96,8 +92,6 @@ void revisarColor(){                                    //Función de escaneo
     }       
   }
 }
-  
-
 
 void imprimirColor(){                //Este es para el monitor o processing
  
@@ -124,4 +118,5 @@ void loop(){          //Funcion que el Arduino ejecuta constantemente
   imprimirColor();
   delay(1000);
 }
+
 
