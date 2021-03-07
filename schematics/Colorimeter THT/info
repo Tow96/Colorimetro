@@ -1,0 +1,159 @@
+{
+  "uuid": "2178e49a4969fbada6723a12ebd83983",
+  "path": "Offline/Colorimeter THT",
+  "name": "Colorimeter THT",
+  "content": "Simple one layer colorimeter THT",
+  "created_at": "2021-03-07 08:48:10",
+  "updated_at": "2021-03-07 13:01:32",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "1410ea23ff106e54310f21dfdea0b069",
+      "title": "THT Colorimeter",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "6cb248c2e942484da7da25b91bbb4c4e": 1,
+        "5db6be25ef9326e979014d00753f39b0": 4,
+        "0306a8b05e5240269b6c3d810ca364be": 3,
+        "70ab316c9d104aa384b390718bde67f8": 1,
+        "243318464ead4d44bc7dcc895216aeb8": 2,
+        "83aa583def4a4e5cb35bc485d498a342": 7
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "φ5 RGB Transparent",
+          4,
+          "LED-TH_4P-BD5.8-P1.30",
+          "LED2,LED3,LED4,LED1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Manufacturer": "KENTO",
+            "BOM_Manufacturer Part": "φ5 RGB Transparent LED",
+            "BOM_Supplier Part": "C32985",
+            "puuid": "ac54e43d4c1941498c70b70974b687d5",
+            "uuid": "5db6be25ef9326e979014d00753f39b0"
+          }
+        ],
+        [
+          "A2541WV-8P",
+          1,
+          "HDR-TH_8P-P2.54-V-M",
+          "H1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C225483",
+            "BOM_Manufacturer": "Changjiang Connectors",
+            "BOM_Manufacturer Part": "A2541WV-8P",
+            "BOM_Paste Type": "expand",
+            "BOM_Assembly Type": "manualWeld",
+            "puuid": "7142253ac24c42e1954a7f7d1d66b136",
+            "uuid": "6cb248c2e942484da7da25b91bbb4c4e"
+          }
+        ],
+        [
+          "A906011",
+          1,
+          "RES-TH_L5.0-W4.1-P3.00-D0.5",
+          "R1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C779587",
+            "BOM_Manufacturer": "JCHL(Shenzhen Jing Chuang He Li Tech)",
+            "BOM_Manufacturer Part": "A906011",
+            "puuid": "98be822ba7014451ae93a67f8ac7a277",
+            "uuid": "70ab316c9d104aa384b390718bde67f8"
+          }
+        ],
+        [
+          "5.1K",
+          7,
+          "RES-TH_BD3.2-L9.0-P13.00-D0.5",
+          "R6,R5,R8,R7,R4,R2,R3",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C120255",
+            "BOM_Manufacturer": "Chian Chia Elec",
+            "BOM_Manufacturer Part": "-",
+            "BOM_LCSC Assembly": "Yes",
+            "BOM_Assembly Type": "manualWeld",
+            "BOM_Paste Type": "expand",
+            "puuid": "35cf034df07e4c92a51ca746178c6e6d",
+            "uuid": "83aa583def4a4e5cb35bc485d498a342"
+          }
+        ],
+        [
+          "2N2222",
+          3,
+          "TO-92-3_L5.1-W4.1-P1.27-L",
+          "Q3,Q2,Q1",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C460118",
+            "BOM_Manufacturer": "DIODES(美台)",
+            "BOM_Manufacturer Part": "ZTX694BSTZ",
+            "puuid": "6a8cc0d167d04926a8ac5a757ba65780",
+            "uuid": "0306a8b05e5240269b6c3d810ca364be"
+          }
+        ],
+        [
+          "HL-508H256WC-HD_6000K_",
+          2,
+          "LED-TH_BD5.8-P2.54-R-RD",
+          "LED6,LED5",
+          {
+            "BOM_Supplier": "LCSC",
+            "BOM_Supplier Part": "C568944",
+            "BOM_Manufacturer": "HONGLITRONIC(Hongli Zhihui (HONGLITRONIC))",
+            "BOM_Manufacturer Part": "HL-508H256WC-HD_6000K_",
+            "puuid": "c260324d56c648f59fdefe64ea78139f",
+            "uuid": "243318464ead4d44bc7dcc895216aeb8"
+          }
+        ]
+      ],
+      "updateTime": 1615135693,
+      "createTime": 1615133987,
+      "histories": [],
+      "created_at": "2021-03-07 10:19:47",
+      "updated_at": "2021-03-07 10:48:13"
+    },
+    {
+      "uuid": "f6c1b83cc0d45c4df026b8e23a319101",
+      "puuid": "2178e49a4969fbada6723a12ebd83983",
+      "title": "PCB_Colorimeter THT",
+      "filename": "PCB_Colorimeter THT.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "ac54e43d4c1941498c70b70974b687d5": 4,
+        "7142253ac24c42e1954a7f7d1d66b136": 1,
+        "98be822ba7014451ae93a67f8ac7a277": 1,
+        "35cf034df07e4c92a51ca746178c6e6d": 7,
+        "6a8cc0d167d04926a8ac5a757ba65780": 3,
+        "c260324d56c648f59fdefe64ea78139f": 2
+      },
+      "BOM": [],
+      "updateTime": 1615143692,
+      "createTime": 1615137388,
+      "histories": [],
+      "created_at": "2021-03-07 11:16:28",
+      "updated_at": "2021-03-07 13:01:32"
+    }
+  ],
+  "sort": [],
+  "title": "Colorimeter THT",
+  "foldername": "Colorimeter THT",
+  "schfilename": "Colorimeter THT.json",
+  "schfilemtime": 1615135693505
+}
